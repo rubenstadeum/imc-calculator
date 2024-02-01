@@ -1,4 +1,4 @@
-import { Modal } from "./modal"
+import { Modal } from "./modal.js"
 
 // variáveis
 const form = document.querySelector('form')
@@ -18,6 +18,6 @@ form.onsubmit = event => {
     Modal.open()
 }
 
-IMC = (weight, height) => {
+function IMC (weight, height) {
     return (weight / ((height / 100) ** 2)).toFixed(2)
 }
