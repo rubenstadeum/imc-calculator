@@ -15,7 +15,6 @@ form.onsubmit = event => {
     const showAlertError = notANumber(weight) || notANumber(height)
 
     if (showAlertError) {
-        console.log('mostrar o alerta de erro')
         AlertError.open()
         return;
     }
